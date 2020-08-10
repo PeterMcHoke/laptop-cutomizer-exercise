@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './CartSection.css';
 import CartList from '../CartList/CartList'
+import CartTotal from'../CartTotal/CartTotal'
 
 
 class CartSection extends Component {
@@ -11,6 +12,10 @@ class CartSection extends Component {
         <CartList
           selectedFeatures={this.props.selectedFeatures}
         />
+        <CartTotal
+          selectedFeatures={this.props.selectedFeatures}
+        />
+
       </section>
     )
   }
